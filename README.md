@@ -17,11 +17,11 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Desktop
 
-![]()
+![](./images/Desktop.png)
 
 ### Mobile
 
-![]()
+![](./images/Mobile.png)
 
 ### Links
 
