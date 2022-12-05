@@ -1,0 +1,164 @@
+/* Variable CSS */
+:root {
+  --clr-primary-dark: hsl(185, 75%, 39%);
+  --clr-primary-vdark: hsl(229, 23%, 23%);
+  --clr-primary-ldark: hsl(227, 10%, 46%);
+
+  --clr-neutral-dark: hsl(0, 0%, 59%);
+  --clr-neutral-light: hsl(0, 0%, 100%);
+
+  --clr-hr: hsl(0, 0%, 91%);
+
+  --fs-regular: 1.125rem;
+  --fs-small: 1rem;
+
+  --ff-body: "Kumbh Sans", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2 {
+  overflow-wrap: break-word;
+}
+
+/* Reusable CSS */
+body {
+  background-color: var(--clr-primary-dark);
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 51vw bottom 40vh, left 49vw top 52vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--ff-body);
+  font-size: var(--fs-small);
+}
+
+.card {
+  max-width: 25rem;
+  margin: 1rem;
+  background-color: var(--clr-neutral-light);
+  border-radius: 0.938rem;
+  overflow: hidden;
+}
+
+.card__images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3rem;
+}
+
+.card__images img {
+  border: 5px solid var(--clr-neutral-light);
+  border-radius: 50%;
+}
+
+.card__content {
+  margin: 0.625rem 0 1.25rem 0;
+}
+
+.card__ID {
+  text-align: center;
+}
+
+.card__ID h1 {
+  color: var(--clr-primary-vdark);
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-bold);
+  padding: 0.313rem 0;
+}
+
+.card__ID span {
+  color: var(--clr-primary-ldark);
+  font-weight: var(--fw-regular);
+  padding-left: 0.5rem;
+}
+
+.card__ID p {
+  font-weight: var(--fw-regular);
+  color: var(--clr-primary-ldark);
+  font-size: 0.9rem;
+}
+
+.card__content hr {
+  border: 0;
+  height: 1px;
+  margin: 1.5rem 0;
+
+  background: var(--clr-hr);
+  background-image: linear-gradient(to right, #ccc, var(--clr-hr), #ccc);
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+.card__info h2 {
+  color: var(--clr-primary-vdark);
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-bold);
+  text-align: center;
+}
+
+.card__info p {
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  color: var(--clr-primary-ldark);
+  text-align: center;
+}
+
+/* Footer */
+.attribution {
+  font-size: 0.688rem;
+  text-align: center;
+  color: var(--clr-neutral-light);
+}
+.attribution a {
+  color: var(--clr-primary-vdark);
+  text-decoration: none;
+}
